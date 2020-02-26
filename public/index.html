@@ -29,15 +29,29 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.9.1/firebase-app.js"></script>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/7.9.1/firebase-analytics.js"></script>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+
+    <script>
+      const config = {
+        apiKey: "AIzaSyB6bpFP7skEsR46-mhXZek8a4kbzaXu2nk",
+        authDomain: "goffee-web-test.firebaseapp.com",
+        databaseURL: "https://goffee-web-test.firebaseio.com",
+        projectId: "goffee-web-test",
+        storageBucket: "goffee-web-test.appspot.com",
+        messagingSenderId: "944797299922",
+        appId: "1:944797299922:web:d938172968771b3c5d690b",
+        measurementId: "G-LQF3JJF0J2"
+      };
+
+      firebase.initializeApp(config);
+    </script>
   </body>
 </html>
